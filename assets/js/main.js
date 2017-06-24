@@ -14,7 +14,7 @@ var app = {
 
 		for(var i = 0; i < this.topics.length; i++){
 			$(".sidebar--List").prepend(`
-				<li><a href="" class="gifCat">${[this.topics[i]]}</a></li>
+				<li><a href="#" class="gifCat">${[this.topics[i]]}</a></li>
 				`)
 		}
 		console.log(this.topics);
