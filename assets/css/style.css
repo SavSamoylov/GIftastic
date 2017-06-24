@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f6f7f8;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 1.3px;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+
+.container{
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+
+.sidebar{
+	position: fixed;
+	width:295px;
+	height:100%;
+	background: #142743;
+	overflow-y: scroll;
+	z-index: 10;
+}
+
+.sidebar--Logo{
+	height:80px;
+	padding:30px 0;
+	background: #0e1b2e;
+	text-align: center;
+}
+
+.sidebar--Input{
+	position: relative;
+	margin-top:60px;
+	height:50px;
+	background: #0e1b2e;
+	line-height: 50px;
+}
+
+.sidebar--Input:hover{
+	background: #080f19;
+	transition: .5s;
+}
+
+.sidebar--Input input{
+	width: 100%;
+	padding:10px 70px 10px 20px;
+	outline: none;
+	font-size:18px;
+	background: none;
+	border:none;
+	color:#ffffff;
+}
+
+.sidebar--Input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+.sidebar--Input input::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+.sidebar--Input input:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+.sidebar--Input input:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+.sidebar--Input button{
+	position: absolute;
+	height:40px;
+	width:40px;
+	top:10%;
+	right:20px;
+	color: #d7d7f4;
+	background: #0066ff;
+	border:none;
+	border-radius: 5px;
+	outline:none;
+	cursor: pointer;
+	font-size:24px;
+}
+
+.sidebar--Input button:hover{
+	background: #0051ca;
+	transition: .5s;
+}
+
+
+.sidebar #label{
+	position: relative;
+	text-transform: uppercase;
+	top:60px;
+	padding:0 20px;
+	font-size: 16px;
+	color:#dbdee3;
+}
+
+.sidebar--List{
+	position: relative;
+	top:70px;
+	padding:0 20px;
+	font-family: sans-serif;
+}
+
+.sidebar--List li{
+	margin:15px 0;
+	font-size:16px;
+	line-height: 1.5em;
+}
+
+.sidebar--List li a{
+	color:#80b3ff;
+}
+
+.sidebar--List li a:hover{
+	color:#ffffff;
+	transition:.5s;
+}
+
+.content{
+	position: relative;
+	padding:20px 0 20px 295px;
+}
+
+.contentBlock{
+	width:92%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.gifBlock{
+	position: relative;
+	float:left;
+	overflow:hidden;
+	width:25%;
+	margin:20px;
+	height:190px;
+}
+
+
+.gifBlock img{
+	cursor: pointer;
+}
+
+.gifRating{
+	position: absolute;
+	top:10px;
+	left:10px;
+	text-transform: uppercase;
+	width:25px;
+	height:25px;
+	background: #ffffff;
+	opacity: 0.75;
+	line-height: 25px;
+	text-align: center;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.gifRating:hover{
+	opacity:1;
+}
