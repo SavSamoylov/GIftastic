@@ -8,13 +8,13 @@ $(document).ready(function(){
 var app = {
 	giphyKey:"dc6zaTOxFJmzC",
 	gifQuantity: "10",
-	queryURL:"http://api.giphy.com/v1/gifs/search?q=",
+	queryURL:"https://api.giphy.com/v1/gifs/search?q=",
 	topics: ["Cheers", "Frasier", "Arrested Development", "Buffy The Vampire Slayer", "Firefly"],
 	loadButtons: function(){ // Display all buttons in the "topics" array when the page loads.
 
 		for(var i = 0; i < this.topics.length; i++){
 			$(".sidebar--List").prepend(`
-				<li><a class="gifCat">${[this.topics[i]]}</a></li>
+				<li><a href="" class="gifCat">${[this.topics[i]]}</a></li>
 				`)
 		}
 		console.log(this.topics);
